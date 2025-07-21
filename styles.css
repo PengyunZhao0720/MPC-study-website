@@ -115,6 +115,11 @@ main {
 .section-content h3 {
     margin-top: 10px;
 }
+
+.large-summary-text {
+    font-size: 20px;
+}
+
 .course-content {
     flex: 3;
     padding: 20px;
@@ -136,7 +141,59 @@ main {
 
 .instructors ul, .recommended-courses ul {
     list-style: none;
+    color: #007bff; /* 链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+    transition: color 0.3s; /* 颜色过渡效果 */
     padding: 0;
+}
+
+.instructor-block {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.instructor-cover {
+    width: 120px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.instructor-icon {
+    width: 20px; /* 调整为合适的标识符图片宽度 */
+    height: auto;
+    margin-right: 10px; /* 添加右侧间距 */
+    vertical-align: middle; /* 与文本垂直居中对齐 */
+}
+
+.instructor-info-text h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.recommended-course-block {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+}
+
+.course-cover {
+    width: 120px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.course-info-text h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.course-info-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
 }
 
 /* 新增链接样式 */
@@ -186,4 +243,72 @@ header {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #45a049;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.references-list {
+    list-style: none;
+    padding: 0;
+}
+
+.references-list li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.references-list li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.references-list li {
+    margin-bottom: 10px;
+}
+
+/* 添加分享区域样式 */
+.share-section {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.share-icon {
+    width: 30px; /* 根据实际图标大小调整 */
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
 }

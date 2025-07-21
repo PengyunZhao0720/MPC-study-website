@@ -1,1 +1,1 @@
-# MPC-study-website
+This is the MPC website for studying
